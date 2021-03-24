@@ -30,8 +30,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here]()
-- Live Site URL: [Add live site URL here]()
+- Solution URL: [Add solution URL here](https://github.com/agusthas/interactive-pricing-component)
+- Live Site URL: [Add live site URL here](https://agusthas.github.io/interactive-pricing-component/)
 
 ## My process
 
