@@ -1,0 +1,65 @@
+@use '_variables' as *;
+
+@mixin slider() {
+  .slider-container {
+    width: 100%;
+    margin: 2rem auto;
+
+    .slider {
+      width: 100%;
+      background: transparent;
+      appearance: none;
+
+      // FIREFOX
+      &::-moz-range-track {
+        height: 10px;
+        background-color: var(--clr-light-grayish-blue-empty-slider);
+        border-radius: 1rem;
+      }
+
+      &::-moz-range-thumb {
+        appearance: none;
+        width: 45px;
+        height: 45px;
+        cursor: grab;
+        background: var(--clr-strong-cyan) url(../../images/icon-slider.svg)
+          no-repeat center center;
+        border: none;
+        border-radius: 50%;
+        box-shadow: 0 10px 30px var(--clr-soft-cyan);
+        transition: background-color 0.2s ease;
+      }
+
+      &::-moz-range-thumb:active {
+        background-color: var(--clr-strong-cyan);
+      }
+
+      &::-moz-range-progress {
+        height: 10px;
+        background-color: var(--clr-soft-cyan);
+        border-radius: 1rem;
+      }
+
+      // WEBKIT (CHROME)
+      &::-webkit-slider-thumb {
+        width: 45px;
+        height: 45px;
+        margin-top: -17px;
+        cursor: grab;
+        background: var(--clr-strong-cyan) url(../../images/icon-slider.svg)
+          no-repeat center center;
+        border: none;
+        border-radius: 50%;
+        box-shadow: 0 10px 30px var(--clr-soft-cyan);
+        transition: background-color 0.2s ease;
+        appearance: none;
+      }
+
+      &::-webkit-slider-runnable-track {
+        height: 10px;
+        background-color: var(--clr-light-grayish-blue-empty-slider);
+        border-radius: 1rem;
+      }
+    }
+  }
+}

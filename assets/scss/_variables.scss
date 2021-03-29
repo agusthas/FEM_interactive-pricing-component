@@ -16,6 +16,14 @@ $colors-list: (
   )
 );
 
+:root {
+  @each $color, $list in $colors-list {
+    @each $shades, $value in $list {
+      --clr-#{$shades}: #{$value};
+    }
+  }
+}
+
 @mixin br-up {
   @media screen and (min-width: 600px) {
     @content;
