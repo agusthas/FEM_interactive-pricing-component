@@ -1,6 +1,5 @@
 @use './variables' as *;
 @use './slider' as *;
-@use './toggle' as *;
 
 @mixin card() {
   .card {
@@ -70,8 +69,6 @@
       align-items: center;
       justify-content: center;
       margin: 2.5rem auto;
-
-      @include toggle();
 
       @include br-up() {
         margin-top: 1rem;
