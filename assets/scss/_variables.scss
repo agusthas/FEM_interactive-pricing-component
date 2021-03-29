@@ -1,0 +1,23 @@
+$colors-list: (
+  'primary': (
+    'soft-cyan': rgba(165, 243, 235, 1),
+    'strong-cyan': rgba(16, 213, 194, 1),
+    'light-grayish-red': rgba(254, 236, 231, 1),
+    'light-red': rgba(255, 140, 102, 1),
+    'pale-blue': rgba(189, 204, 255, 1)
+  ),
+  'neutral': (
+    'light-grayish-blue-toggle-background': rgba(205, 215, 238, 1),
+    'very-pale-blue': rgba(250, 251, 255, 1),
+    'grayish-blue': rgba(133, 143, 173, 1),
+    'dark-desaturated-blue': rgba(41, 51, 86, 1),
+    'light-grayish-blue-empty-slider': rgba(234, 238, 251, 1),
+    'white': rgba(255, 255, 255, 1)
+  )
+);
+
+@mixin br-up {
+  @media screen and (min-width: 600px) {
+    @content;
+  }
+}
