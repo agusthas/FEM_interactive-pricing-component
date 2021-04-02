@@ -180,6 +180,7 @@ body {
 .card__top .slider-container .slider {
   width: 100%;
   background: transparent;
+  -webkit-appearance: none;
   appearance: none;
 }
 .card__top .slider-container .slider::-moz-range-track {
@@ -188,7 +189,6 @@ body {
   border-radius: 1rem;
 }
 .card__top .slider-container .slider::-moz-range-thumb {
-  appearance: none;
   width: 45px;
   height: 45px;
   cursor: grab;
@@ -197,6 +197,7 @@ body {
   border-radius: 50%;
   box-shadow: 0 10px 30px var(--clr-soft-cyan);
   transition: background-color 0.2s ease;
+  appearance: none;
 }
 .card__top .slider-container .slider::-moz-range-thumb:active {
   background-color: var(--clr-strong-cyan);
@@ -216,6 +217,7 @@ body {
   border-radius: 50%;
   box-shadow: 0 10px 30px var(--clr-soft-cyan);
   transition: background-color 0.2s ease;
+  -webkit-appearance: none;
   appearance: none;
 }
 .card__top .slider-container .slider::-webkit-slider-runnable-track {
@@ -269,7 +271,6 @@ body {
 }
 .card__billing {
   display: flex;
-  gap: 10px;
   align-items: center;
   justify-content: center;
   margin: 2.5rem auto;
@@ -280,6 +281,7 @@ body {
   }
 }
 .card__billing-monthly, .card__billing-yearly {
+  margin: 0 10px;
   font-size: 0.8rem;
 }
 @media screen and (min-width: 600px) {

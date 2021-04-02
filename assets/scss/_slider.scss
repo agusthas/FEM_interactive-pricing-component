@@ -8,6 +8,7 @@
     .slider {
       width: 100%;
       background: transparent;
+      -webkit-appearance: none;
       appearance: none;
 
       // FIREFOX
@@ -18,7 +19,6 @@
       }
 
       &::-moz-range-thumb {
-        appearance: none;
         width: 45px;
         height: 45px;
         cursor: grab;
@@ -28,6 +28,7 @@
         border-radius: 50%;
         box-shadow: 0 10px 30px var(--clr-soft-cyan);
         transition: background-color 0.2s ease;
+        appearance: none;
       }
 
       &::-moz-range-thumb:active {
@@ -52,6 +53,7 @@
         border-radius: 50%;
         box-shadow: 0 10px 30px var(--clr-soft-cyan);
         transition: background-color 0.2s ease;
+        -webkit-appearance: none;
         appearance: none;
       }
 
