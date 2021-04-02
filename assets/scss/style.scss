@@ -1,0 +1,58 @@
+@use './variables' as *;
+@use './resets' as *;
+@use './card' as *;
+@use './toggle' as *;
+
+body {
+  font-family: 'Manrope', sans-serif;
+  color: var(--clr-grayish-blue);
+  background-color: var(--clr-very-pale-blue);
+}
+
+.l-container {
+  min-height: 100vh;
+  padding: 5rem 1rem 1rem 1rem;
+  overflow: hidden;
+  background: url(../../images/pattern-circles.svg) no-repeat top 7% center,
+    url(../../images/bg-pattern.svg) no-repeat;
+
+  @include br-up() {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+}
+
+.header {
+  margin-bottom: 3rem;
+  text-align: center;
+
+  @include br-up() {
+    margin-bottom: 5rem;
+  }
+
+  &__heading {
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+    font-weight: 800;
+    color: var(--clr-dark-desaturated-blue);
+    letter-spacing: 0.3px;
+
+    @include br-up() {
+      font-size: 1.75rem;
+    }
+  }
+
+  &__lead {
+    margin-inline: auto;
+    max-width: 22ch;
+    font-size: 1rem;
+    letter-spacing: 0.3px;
+
+    @include br-up() {
+      max-width: 100%;
+    }
+  }
+}
+
+@include toggle();
+@include card();

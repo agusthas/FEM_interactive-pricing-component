@@ -1,0 +1,41 @@
+@use '_variables' as *;
+
+@mixin toggle() {
+  .toggle {
+    display: inline-block;
+
+    &__input {
+      // Hide the checkboxes
+      display: none;
+    }
+
+    &__fill {
+      position: relative;
+      width: 42px;
+      height: 22px;
+      background-color: var(--clr-light-grayish-blue-toggle-background);
+      border-radius: 11px;
+      transition: background-color 0.2s;
+
+      &::after {
+        position: absolute;
+        top: 3px;
+        left: 4px;
+        width: 15px;
+        height: 15px;
+        content: '';
+        background-color: var(--clr-white);
+        border-radius: 50%;
+        transition: transform 0.2s;
+      }
+    }
+
+    &__input:checked ~ &__fill {
+      background-color: var(--clr-strong-cyan);
+    }
+
+    &__input:checked ~ &__fill::after {
+      transform: translateX(19px);
+    }
+  }
+}
