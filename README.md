@@ -31,7 +31,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Solution](https://github.com/agusthas/interactive-pricing-component)
-- Live Site URL: [Github Pages](https://agusthas.github.io/interactive-pricing-component/)
+- Live Site URL: [Github Pages](https://agusthas.github.io/FEM_interactive-pricing-component/)
 
 ## My process
 
